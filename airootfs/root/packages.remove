@@ -1,0 +1,21 @@
+f2fs-tools
+hdparm
+jfsutils
+pcmciautils
+reiserfsprogs
+xfsprogs
+
+mdadm
+gpm
+licenses
+
+### testen
+#linux-firmware
+#geoip
+#geoip-database
+#s-nail
+#nettle
+#pacman-mirrorlist
+#pinentry
+#openresolv
+
