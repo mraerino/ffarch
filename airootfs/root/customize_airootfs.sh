@@ -34,7 +34,7 @@ systemctl enable sshd.service
 systemctl enable dnsmasq.service
 
 ### enable acpid
-#systemctl enable acpid.service
+systemctl enable acpid.service
 
 systemctl enable systemd-networkd.service
 systemctl enable systemd-resolved.service

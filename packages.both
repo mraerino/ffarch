@@ -1,5 +1,6 @@
+acpid
 #btrfs-progs
-dhclient
+#dhclient
 #dialog
 dnsmasq
 dnsutils
