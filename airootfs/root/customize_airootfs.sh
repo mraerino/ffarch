@@ -42,16 +42,20 @@ systemctl enable systemd-resolved.service
 ### disable predictable interface names
 ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 
-### enable dnsmasq
-systemctl enable dnsmasq.service
 
+### enable customized firewall
+systemctl enable ferm.service
+
+### enable new hostname
+systemctl enable hostname-by-mac.service
 
 ### export package list
 pacman -Q > /root/packages_all.txt
 
 ### uninstall packages
-#pacman -Rusn --noconfirm f2fs-tools jfsutils pcmciautils reiserfsprogs xfsprogs mdadm licenses cryptsetup man-db \
-# man-pages s-nail vi perl
+pacman -Rusn --noconfirm cryptsetup jfsutils mdadm man-db man-pages \
+ netctl pcmciautils perl reiserfsprogs s-nail xfsprogs vi 
+# memtest86+ netctl 
 pacman -Q > /root/packages_less.txt
 
 ### remove docs and man
