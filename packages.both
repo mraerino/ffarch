@@ -1,8 +1,7 @@
 acpid
 bird
-#btrfs-progs
+collectd
 #dhclient
-#dialog
 dnsmasq
 dnsutils
 dosfstools
@@ -14,7 +13,6 @@ grub
 hdparm
 htop
 iftop
-#linux-atm
 #mtools
 #nilfs-utils
 ntfs-3g
@@ -22,6 +20,7 @@ ntfs-3g
 openssh
 refind-efi
 rsync
+rsyslog
 sudo
 tcpdump
 vim-minimal
