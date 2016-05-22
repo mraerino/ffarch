@@ -12,6 +12,7 @@ o DNSMAQ configuration
 Medium Priority
 ===============
 - IPv6 support
+- usb multiboot + updater
 
 Low Priority
 ============
