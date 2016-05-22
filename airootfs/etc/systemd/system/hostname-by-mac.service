@@ -1,0 +1,9 @@
+[Unit]
+Description=set new hostname by mac
+After=systemd-hostnamed.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/etc/systemd/scripts/generate-hostname.sh
+
