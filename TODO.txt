@@ -1,0 +1,19 @@
+High Priority
+=============
+x ISOLINUX Timeout not working
+- Network Stuff
+  x Masquerading
+  o firewall configuration
+  x VLAN IP Configuration
+  o BATMAN Interface
+  - Routing
+o DNSMAQ configuration
+
+Medium Priority
+===============
+- IPv6 support
+
+Low Priority
+============
+- remote syslog
+- collectd (to prometheus)
