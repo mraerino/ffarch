@@ -17,4 +17,6 @@ Medium Priority
 Low Priority
 ============
 - remote syslog
+  - rotate ?
 - collectd (to prometheus)
+- uefi support

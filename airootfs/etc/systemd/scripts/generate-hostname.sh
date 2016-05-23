@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 FILES=/sys/class/net
 for f in $FILES/e*
@@ -7,6 +7,6 @@ do
 done
 
 MAC=`sed 's/://g' $f/address`
-MAC=`echo $MAC | sed 's/\(.*\)/\U\1/'`
+#MAC=`echo $MAC | sed 's/\(.*\)/\U\1/'`
 
-hostnamectl set-hostname "bat-${MAC}"
+echo bat-${MAC} > /etc/hostname

@@ -1,11 +1,11 @@
 [Unit]
 Description=set new hostname by mac
+Before=systemd-hostnamed.service
+Requires=system.slice sysinit.target 
+#Afer=basic.target
 
 [Service]
 Type=oneshot
 RemainAfterExit=no
 ExecStart=/etc/systemd/scripts/generate-hostname.sh
-
-[Install]
-WantedBy=multi-user.target
 

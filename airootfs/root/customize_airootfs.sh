@@ -47,15 +47,14 @@ ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 systemctl enable ferm.service
 
 ### enable new hostname
-systemctl enable hostname-by-mac.service
+#systemctl enable hostname-by-mac.service
 
 ### export package list
 pacman -Q > /root/packages_all.txt
 
 ### uninstall packages
 pacman -Rusn --noconfirm cryptsetup jfsutils mdadm man-db man-pages \
- netctl pcmciautils perl reiserfsprogs s-nail xfsprogs vi 
-# memtest86+ netctl 
+ netctl pcmciautils perl reiserfsprogs s-nail xfsprogs vi memtest86+ netctl 
 pacman -Q > /root/packages_less.txt
 
 ### remove docs and man
