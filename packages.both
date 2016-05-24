@@ -14,6 +14,7 @@ grub
 hdparm
 htop
 iftop
+iproute2
 #mtools
 #nilfs-utils
 ntfs-3g
