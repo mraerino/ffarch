@@ -1,13 +1,14 @@
 [Unit]
 Description=batman-adv
-Wants=systemd-networkd.service
-After=network.target
+After=dnsmasq.service
 
 [Service]
 Type=oneshot
-RemainAfterExit=yes
+RemainAfterExit=no
 ExecStart=/bin/batctl if add eth0.12
-ExecStart=/bin/batctl it 10000
+ExecStart=/bin/batctl it 5000
+ExecStart=/bin/batctl gw_mode server 20mbit/2mbit
+ExecStop=/bin/batctl if del eth0.12
 
 [Install]
 WantedBy=multi-user.target
