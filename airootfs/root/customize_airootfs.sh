@@ -20,7 +20,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 ### create additional group
-groupadd sshusers
+#groupadd sshusers
 ### create additional user
 # useradd -m  -G sshusers,wheel -s /usr/bin/zsh -p CRYPTPWD freifunk
 
@@ -35,6 +35,12 @@ systemctl enable dnsmasq.service
 
 ### enable acpid
 systemctl enable acpid.service
+
+### enable batman-adv
+systemctl enable batman-adv.service
+
+### enable beep
+systemctl enable beep.service
 
 systemctl enable systemd-networkd.service
 systemctl enable systemd-resolved.service
@@ -54,7 +60,8 @@ pacman -Q > /root/packages_all.txt
 
 ### uninstall packages
 pacman -Rusn --noconfirm cryptsetup jfsutils mdadm man-db man-pages \
- netctl pcmciautils perl reiserfsprogs s-nail xfsprogs vi memtest86+ netctl 
+ netctl pcmciautils perl reiserfsprogs s-nail xfsprogs vi netctl 
+#memtest86+
 pacman -Q > /root/packages_less.txt
 
 ### remove docs and man
