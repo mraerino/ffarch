@@ -1,5 +1,9 @@
 High Priority
 =============
+- handling of root account
+  - password (?)
+  - autologin (?)
+- set hostname by mac 
 x ISOLINUX Timeout not working
 - Network Stuff
   x Masquerading
@@ -17,6 +21,8 @@ Medium Priority
 Low Priority
 ============
 - remote syslog
-  - rotate ?
 - collectd (to prometheus)
 - uefi support
+- cleanup
+  - remove unneeded packages
+  - save more space
