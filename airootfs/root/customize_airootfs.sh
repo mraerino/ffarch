@@ -29,6 +29,7 @@ systemctl set-default multi-user.target
 
 ### enable sshd
 systemctl enable sshd.service
+chown -R root:root /root/.ssh
 
 ### enable dnsmasq
 systemctl enable dnsmasq.service
