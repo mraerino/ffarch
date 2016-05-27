@@ -26,6 +26,7 @@ rsync
 rsyslog
 sudo
 tcpdump
+tmux
 vim-minimal
 wget
 ### batman-adv stuff
