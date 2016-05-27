@@ -6,7 +6,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=no
-ExecStart=beep -f 5000 -l 50 -r 2
+ExecStart=/usr/bin/beep -f 5000 -l 50 -r 2
 
 [Install]
 WantedBy=multi-user.target
