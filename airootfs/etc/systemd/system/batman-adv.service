@@ -5,10 +5,11 @@ After=dnsmasq.service
 [Service]
 Type=oneshot
 RemainAfterExit=no
-ExecStart=/bin/batctl if add eth0.12
+ExecStart=/bin/batctl if add br0
 ExecStart=/bin/batctl it 5000
 ExecStart=/bin/batctl gw_mode server 20mbit/2mbit
-ExecStop=/bin/batctl if del eth0.12
+ExecStart=/usr/bin/ip link set bat0 up
+ExecStart=/usr/bin/ip addr add 172.16.0.1/22 broadcast 172.16.3.255 dev bat0
 
 [Install]
 WantedBy=multi-user.target

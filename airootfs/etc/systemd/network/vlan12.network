@@ -2,7 +2,5 @@
 Name=eth0.12
 
 [Network]
-DHCP=no
+Bridge=br0
 
-[Address]
-Address=172.16.0.1/22
