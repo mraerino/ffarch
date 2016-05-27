@@ -1,9 +1,7 @@
 acpid
 beep
-bird
 bridge-utils
 collectd
-#dhclient
 dnsmasq
 dnsutils
 dosfstools
