@@ -41,6 +41,9 @@ systemctl enable beep.service
 systemctl enable systemd-networkd.service
 systemctl enable systemd-resolved.service
 
+### enable wol for interface eth0
+systemctl enable wol@eth0.service
+
 ### disable predictable interface names
 ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 
