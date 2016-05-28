@@ -31,3 +31,11 @@ wget
 ### batman-adv stuff
 batctl
 batman-adv
+
+### python3
+python
+python-setuptools
+python-pip
+
+### python based applications
+speedtest-cli
