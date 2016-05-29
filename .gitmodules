@@ -1,0 +1,6 @@
+[submodule "src/localrepo/batman-adv"]
+	path = src/localrepo/batman-adv
+	url = https://aur.archlinux.org/batman-adv.git
+[submodule "src/localrepo/batctl"]
+	path = src/localrepo/batctl
+	url = https://aur.archlinux.org/batctl.git
