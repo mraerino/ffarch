@@ -28,6 +28,7 @@ tcpdump
 tmux
 vim-minimal
 wget
+
 ### batman-adv stuff
 batctl
 batman-adv
@@ -39,3 +40,8 @@ python-pip
 
 ### python based applications
 speedtest-cli
+
+### optional for ferm
+ebtables
+arptables
+ipset
