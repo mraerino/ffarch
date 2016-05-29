@@ -1,0 +1,10 @@
+[Unit]
+Description=detect hardware sensors
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/sensors-detect --auto
+
+[Install]
+WantedBy=multi-user.target

@@ -54,6 +54,9 @@ systemctl enable ferm.service
 ### enable new hostname
 #systemctl enable hostname-by-mac.service
 
+### lm_sensors autodetct
+systemctl enable sensors-detect.service
+
 ### export package list
 pacman -Q > /root/packages_all.txt
 

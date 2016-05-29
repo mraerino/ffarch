@@ -45,3 +45,7 @@ speedtest-cli
 ebtables
 arptables
 ipset
+
+### optional for collectd
+lm_sensors
+liboping
