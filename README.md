@@ -21,6 +21,9 @@ Purpose: Batman-ADV Interface
 
 Configuration: Static IP: 172.16.0.1/22 and DNS, DHCP
 
+## Problems & Hints
+- Please check your file permissions (755) for airootfs and subdirectories
+
 ## ToDo
 
 ### High Priority
