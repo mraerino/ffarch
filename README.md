@@ -8,14 +8,17 @@ We assume that the used hardware has only one nic.
 
 ###eth0 
 Purpose: Management Interface
+
 Configuration: RFC1918 IPv4 via DHCP without Gateway
 
 ###Vlan 11
 Purpose: WAN Interface
+
 Configuration: RFC1918 IPv4 via DHCP and IPv6 with RA
 
 ###Vlan 12
 Purpose: Batman-ADV Interface
+
 Configuration: Static IP: 172.16.0.1/22 and DNS, DHCP
 
 ## ToDo
@@ -36,4 +39,3 @@ Configuration: Static IP: 172.16.0.1/22 and DNS, DHCP
 * remote syslog
 * collectd
 * cleanup 
-## How?
