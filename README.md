@@ -1,12 +1,28 @@
 # Freifunk Local Batman Master
 
 ## What is it?
-The generated ISO turns x64 hardware in an local batman-adv master for a small mesh. It is based on archiso. 
+The generated ISO turns x64 hardware in an local batman-adv master for a small mesh. It is based on archiso.
+
+## Building
+
+Needs: `archiso` package
+
+```
+$ git submodule init
+$ git submodule update
+
+$ sh -c "cd localrepo/batman-adv && makepkg -sr"
+$ sh -c "cd localrepo/batctl && makepkg -sr"
+$ mkdir /tmp/localrepo
+$ repo-add /tmp/localrepo/ff-repo.db.tar.gz localrepo/**/*.pkg.tar.xz
+
+$ sudo ./build.sh
+```
 
 ## Configuration
 We assume that the used hardware has only one nic.
 
-###eth0 
+###eth0
 Purpose: Management Interface
 
 Configuration: RFC1918 IPv4 via DHCP without Gateway
@@ -38,4 +54,4 @@ Configuration: Static IP: 172.16.0.1/22 and DNS, DHCP
 * uefi support
 * remote syslog
 * collectd
-* cleanup 
+* cleanup
